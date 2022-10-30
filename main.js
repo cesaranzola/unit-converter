@@ -1,4 +1,3 @@
-
 // ======================= Grab elements ============================
 
 // Main title
@@ -20,5 +19,14 @@ let pElOne = document.getElementById('p-el-one');
 let pElTwo = document.getElementById('p-el-two');
 let pElThree = document.getElementById('p-el-three');
 
-// =================================================================
+// ======================= Add event listeners ========================
+btnEl.addEventListener('click', () => {
+	let num = inputNum.value;
+	toLen(num);
+	volume(num);
+	mass(num);
+	inputNum.value = '';
+});
+
+// ======================= Functions ==================================
 
