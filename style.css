@@ -14,7 +14,7 @@ body {
 
 h2 {
 	color: var(--h2-col);
-    margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 h1,
@@ -64,10 +64,26 @@ p {
 }
 
 #bigBox {
-	width: 35%;
-	margin-top: 9rem;
-    border-radius: 0.5rem;
+	margin-top: 7rem;
+	border-radius: 0.5rem;
 	box-shadow: 0 0 0 3px var(--whity);
+}
+
+@media (max-width: 400px) {
+	#bigBox {
+        border-radius: none;
+        box-shadow: none;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        text-align: center !important;
+        padding-bottom: 0 !important;
+        border-bottom: 10rem var(--bkg-col) !important;
+	}
+    #boxTwo {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+
+    }
 }
 
 @keyframes tilt-shaking-item {
@@ -125,7 +141,7 @@ p {
 }
 
 .constant-tilt-shake-para {
-    animation: tilt-shaking-para 3s ;
+	animation: tilt-shaking-para 3s;
 }
 
 .constant-tilt-shake-button {
