@@ -59,7 +59,6 @@ p {
 	background-color: #6943ff;
 	border: 2px solid var(--inputBorder);
 	color: var(--whity);
-	float: left;
 }
 
 #btnEl {
