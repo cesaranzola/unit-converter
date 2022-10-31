@@ -72,21 +72,17 @@ p {
 	box-shadow: 0 0 0 3px var(--whity);
 }
 
-/* @media (max-width: 400px) {
+@media (max-width: 412px) {
 	#bigBox {
-		border-radius: none;
-		box-shadow: none;
-		margin-top: 0 !important;
-		margin-bottom: 0 !important;
-		text-align: center !important;
-		padding-bottom: 0 !important;
-		border-bottom: 10rem var(--bkg-col) !important;
+		width: 90%;
+		margin: 1rem;
+		border-radius: 0.3rem;
+		box-shadow: 0 0 0 1px var(--whity);
 	}
-	#boxTwo {
-		margin-bottom: 0 !important;
-		padding-bottom: 0 !important;
+	#main-title {
+		text-align: center;
 	}
-} */
+}
 
 @keyframes tilt-shaking-item {
 	0% {
