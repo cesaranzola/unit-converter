@@ -1,13 +1,14 @@
 :root {
 	--bkg-col: #1f2937;
 	--h2-col: #ccc1ff;
-	--p-col: #f5f5f5;
+	--p-title: #f5f5f5;
 	--boxOne: #6943ff;
 	--boxTwo: #28374c;
+    --subBoxOne: #273549;
 }
 
 body {
-	background-color: var(--bkg-col);
+	background-color: #0d101b;
 }
 
 h2 {
@@ -16,7 +17,7 @@ h2 {
 
 h1,
 p {
-	color: var(--p-col);
+	color: var(--p-title);
 }
 
 #boxOne {
@@ -24,5 +25,10 @@ p {
 }
 
 #boxTwo {
-    background-color: var(--boxTwo);
+    background-color: var(--bkg-col);
+}
+
+#subBoxOne, #subBoxTwo, #subBoxThree {
+    background-color: var(--subBoxOne);
+    margin-top: 2rem;
 }
