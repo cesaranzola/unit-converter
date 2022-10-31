@@ -10,6 +10,7 @@
 
 body {
 	background-color: #0d101b;
+	font-family: 'Exo 2', sans-serif;
 }
 
 h2 {
@@ -46,6 +47,7 @@ p {
 	margin-top: 2.5rem;
 	font-size: 2rem;
 	font-weight: bolder;
+	text-shadow: 2px 2px 2px black;
 }
 
 #inputNum {
@@ -61,6 +63,7 @@ p {
 
 #btnEl {
 	width: 117px;
+	font-size: 1.2rem;
 }
 
 #bigBox {
@@ -71,19 +74,18 @@ p {
 
 @media (max-width: 400px) {
 	#bigBox {
-        border-radius: none;
-        box-shadow: none;
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-        text-align: center !important;
-        padding-bottom: 0 !important;
-        border-bottom: 10rem var(--bkg-col) !important;
+		border-radius: none;
+		box-shadow: none;
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+		text-align: center !important;
+		padding-bottom: 0 !important;
+		border-bottom: 10rem var(--bkg-col) !important;
 	}
-    #boxTwo {
-        margin-bottom: 0 !important;
-        padding-bottom: 0 !important;
-
-    }
+	#boxTwo {
+		margin-bottom: 0 !important;
+		padding-bottom: 0 !important;
+	}
 }
 
 @keyframes tilt-shaking-item {
