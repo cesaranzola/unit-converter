@@ -23,10 +23,24 @@ let pElThree = document.getElementById('p-el-three');
 btnEl.addEventListener('click', () => {
 	let num = inputNum.value;
 	toLen(num);
-	volume(num);
-	mass(num);
+	// volume(num);
+	// mass(num);
 	inputNum.value = '';
 });
 
 // ======================= Functions ==================================
+function toLen(num) {
+	let meterToFt = num * 3.281;
+	let ftToMeter = num / 3.281;
+	pElOne.textContent = `${num} meters = ${meterToFt} feet | ${num} feet = ${ftToMeter.toFixed(2)} meters`;
+}
 
+function volume(num) {
+	let liToGal = num / 4.546;
+	let galToLit = num * 4.546;
+}
+
+function mass(num) {
+	let kToPound = num * 2.205;
+	let poundToK = num / 2.205;
+}
