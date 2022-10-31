@@ -14,6 +14,11 @@ let titleOne = document.getElementById('title-one');
 let titleTwo = document.getElementById('title-two');
 let titleThree = document.getElementById('title-three');
 
+// Paragraphs boxes
+let subBoxOne = document.getElementById('subBoxOne');
+let subBoxTwo = document.getElementById('subBoxTwo');
+let subBoxThree = document.getElementById('subBoxThree');
+
 // Paragraphs
 let pElOne = document.getElementById('p-el-one');
 let pElTwo = document.getElementById('p-el-two');
@@ -25,7 +30,15 @@ btnEl.addEventListener('click', () => {
 	toLen(num);
 	volume(num);
 	mass(num);
-	inputNum.value = '';
+	subBoxOne.classList.add('constant-tilt-shake-para');
+	subBoxTwo.classList.add('constant-tilt-shake-para');
+	subBoxThree.classList.add('constant-tilt-shake-para');
+
+	setTimeout(() => {
+		subBoxOne.classList.remove('constant-tilt-shake-para');
+		subBoxTwo.classList.remove('constant-tilt-shake-para');
+		subBoxThree.classList.remove('constant-tilt-shake-para');
+	}, 3000);
 });
 
 // ======================= Functions ==================================
